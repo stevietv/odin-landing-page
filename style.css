@@ -8,9 +8,9 @@
     --white-text-main: #F9FAF8;
     --white-text-secondary: #E5E7EB;
     --grey-text-secondary: #1F2937;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 a {
@@ -21,16 +21,18 @@ a {
 .flex-container {
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--dark-background);
-    flex: 1;
-    padding: 0 300px;
+    color: var(--white-text-secondary);
+    flex: 0 1 auto;
+    font-size: 18px;
 }
 
 .navbar-image {
@@ -38,8 +40,6 @@ a {
 }
 
 .navbar-links {
-    font-size: 18px;
-    color: var(--white-text-secondary);
     display: flex;
     gap: 16px;
 }
@@ -47,10 +47,14 @@ a {
 .header {
     display: flex;
     background-color: var(--dark-background);
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex: 1;
-    padding: 50px 300px;
+    flex: 1; 
+    padding: 50px 0px;
+}
+
+.hero-text {
+    max-width: 100vh;
 }
 
 .hero-text-main {
@@ -145,16 +149,31 @@ a {
 
 .cta {
     display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.cta-box {
+    display: flex;
     background-color: var(--highlight-color);
     color: var(--white-text-main);
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex: 1;
-    margin: 50px 400px;
+    flex: auto;
+    margin: 50px;
     padding: 30px 75px;
     border-radius: 5px;
     font-size: small;
+    max-width: 900px;
+    justify-content: center;
+}
+
+.cta-left {
+    margin-right: 50px;
+}
+
+.cta-right {
+    width: 140px
 }
 
 .cta-header-text {
