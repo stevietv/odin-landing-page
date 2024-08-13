@@ -78,10 +78,6 @@ a {
     width: 300px;
 }
 
-.content-side {
-    flex: initial;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -103,18 +99,18 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     font-size: 10px;
-    gap: 40px;
+    gap: 60px;
     text-align: justify;
     text-align-last: center;
     color: var(--grey-text-secondary)
 }
 
 .content-item {
-    width: 100px;
+    width: 150px;
 }
 
 .content-item img {
-    width: 100px;
+    width: 150px;
     border: 2px solid var(--highlight-color);
     padding: 2px;
     border-radius: 8px;
