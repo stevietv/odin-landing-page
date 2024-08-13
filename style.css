@@ -13,6 +13,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -32,8 +38,6 @@ a {
     flex: 1;
     padding: 0 300px;
 }
-
-
 
 .navbar-image {
     width: 100px;
@@ -118,13 +122,16 @@ a {
     border-radius: 8px;
 }
 
-.quote-side {
-    flex: 1 0 25%;
-    background-color: var(--light-background);
-}
-
 .quote-container {
     display: flex;
+    width: 100%;
+    max-width: max-content;
+}
+
+.quote-side {
+    flex-shrink: 0;
+    width: 400px;
+    background-color: var(--light-background);
 }
 
 .quote {
@@ -133,7 +140,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 0 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: auto;
     padding: 60px 0px;
 }
 
@@ -158,7 +167,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    margin: 50px 300px;
+    margin: 50px 400px;
     padding: 30px 75px;
     border-radius: 5px;
     font-size: small;
