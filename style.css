@@ -13,12 +13,6 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -107,12 +101,16 @@ a {
 .content-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     font-size: 10px;
-    width: 100px;
     gap: 40px;
     text-align: justify;
     text-align-last: center;
     color: var(--grey-text-secondary)
+}
+
+.content-item {
+    width: 100px;
 }
 
 .content-item img {
@@ -124,26 +122,16 @@ a {
 
 .quote-container {
     display: flex;
-    width: 100%;
-    max-width: max-content;
-}
-
-.quote-side {
-    flex-shrink: 0;
-    width: 400px;
     background-color: var(--light-background);
+    justify-content: center;
+    padding: 60px 0px;
 }
 
 .quote {
     display: flex;
     background-color: var(--light-background);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: auto;
-    padding: 60px 0px;
+    max-width: 600px;
 }
 
 .quotation-text {
